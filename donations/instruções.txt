@@ -1,0 +1,35 @@
+velocidade:	tempo que cada mensagem ficará estática para ser lida (em milissegundos)
+
+
+
+
+
+
+Ao executar o arquivo e configurá-lo será criado um arquivo "letreiro.txt" no mesmo diretório.
+
+Crie um objeto de texto no OBS e selecione o texto como arquivo (UTF-8 ou compatível). Use o arquivo "letreiro.txt".
+Configure o resto como desejar (fonte, tamanho, posição, etc...).
+
+
+
+Para interromper o letreiro, feche a janela do cmd.
+
+
+
+Demonstração: https://www.youtube.com/watch?v=PxpdMDbxFhU
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+feito por: xand

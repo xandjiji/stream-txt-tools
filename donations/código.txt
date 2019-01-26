@@ -1,0 +1,56 @@
+//autor: xand
+
+
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <windows.h>
+
+using namespace std;
+
+int main()
+{
+
+    ofstream texto ("letreiro.txt");
+    string linha;
+    string linha2;
+    int velocidade;
+
+    int i;
+    i = 2;
+
+    int j;
+
+    cout << "Velocidade do letreiro (milissegundos): ";
+    cin >> velocidade;
+    cout << "Feche a janela para parar" << endl << endl;
+    cout << "Rodando..." << endl;
+
+while(i>1)
+{
+    ifstream msg ("mensagens.txt");
+    while (getline(msg,linha))
+    {
+        linha2.clear();
+        for(j = 0; j < linha.length(); j ++)
+        {
+        ofstream texto ("letreiro.txt");
+        linha2 = linha2 + linha[j];
+        texto << linha2;
+        texto.close();
+        Sleep(50);
+        }
+        Sleep(velocidade);
+        ofstream texto ("letreiro.txt");
+        linha2.clear();
+        texto << linha2;
+        Sleep(1000);
+
+    }
+    i++;
+    msg.close();
+}
+
+
+    return 0;
+}

@@ -1,0 +1,73 @@
+//autor: xand
+
+
+#include <iostream>
+#include <windows.h>
+#include <fstream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+	int h;
+	int m;
+	int s;
+
+	string texto;
+	string texto2;
+
+	cout << "Contagem regressiva" << endl << endl;
+
+	cout << "Insira o texto: ";
+	getline (cin,texto);
+
+	cout << "Insira o texto de termino: ";
+	getline (cin,texto2);
+
+	cout << "Insira as horas: ";
+	cin >> h;
+
+	cout << "Insira os minutos: ";
+	cin >> m;
+
+	cout << "Insira os segundos: ";
+	cin >> s;
+
+	cout << endl;
+    	system("pause");
+
+    	for (int hora = h; hora >= 0; hora--)
+	{
+        	for (int min = m; min >= 0 ; min--)
+        	{
+            		if ( min == 0 && h > 0)
+                	m = 59;
+				for (int seg = s; seg >= 0; seg--)
+				{
+					if ( seg == 0 )
+                    			s = 59;
+
+                    			Sleep(1000);
+                    			system("cls");
+
+                    			cout << endl << endl << endl << "       " << texto << " " << hora << "h:" << min << "m:" << seg << "s" << endl;
+
+                    			ofstream myfile;
+                    			myfile.open ("tempo.txt");
+                    			myfile << "     " << texto << " " << hora << "h:" << min << "m:" << seg << "s";
+                    			myfile.close();
+				}
+        	}
+	}
+
+	Sleep(1000);
+    	cout << "       " << texto2 << endl;
+
+	ofstream myfile;
+	myfile.open ("tempo.txt");
+	myfile << texto2;
+	myfile.close();
+
+	return 0;
+}

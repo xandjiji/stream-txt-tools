@@ -1,0 +1,38 @@
+texto:			texto que ficará antes do contador (pode ser em branco)
+texto de termino:	texto que aparecerá quando o contador zerar (pode ser em branco)
+
+
+
+
+
+
+Ao executar o arquivo e configurá-lo, pressione qualquer tecla para iniciar o contador.
+Será criado um arquivo "tempo.txt" no mesmo diretório do arquivo.
+
+Crie um objeto de texto no OBS e selecione o texto como arquivo (UTF-8 ou compatível). Use o arquivo "tempo.txt".
+Configure o resto como desejar (fonte, tamanho, posição, etc...).
+
+
+
+Caso queira "parar" o contador, feche a janela do cmd.
+Caso queira retomar, você precisará abrir denovo o executável e inserir novamente os textos e os valores (no arquivo "tempo.txt" estará o tempo da última sessão).
+
+
+
+Demonstração: https://www.youtube.com/watch?v=3tnCT-UuBwE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+feito por: xand
